@@ -14,6 +14,11 @@ const staticFolder = express.static("public");
 app.use(staticFolder);
 app.use(bodyParser.json());
 
+app.get('/:short_url', (req,res) => {
+    console.log(res.params.short_url);
+    const short_url = res.params.short_url;
+    res.send(short_url);
+})
 
 app.post('/admin/urls/', (req, res) => {
     console.log(req.body);
