@@ -25,6 +25,8 @@ app.get('/:short_url', (req,res) => {
         const data = response.data()
         if (data && data.url){
             res.redirect(301,data.url);
+        }else {
+            res.redirect(404,"https://github.com/JayantGoel001")
         }
     })
 });
