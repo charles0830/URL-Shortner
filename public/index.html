@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<script>
+    function generateShort(event) {
+
+    }
+</script>
 <div class="shade">
     <div class="blackboard">
-        <div class="form">
+        <form onsubmit="generateShort(event)"> 
             <p>
                 <label for="url">URL: </label>
                 <input autocomplete="off" id="url" type="text" placeholder="https://github.com/JayantGoel001/" />
@@ -34,7 +39,7 @@
             <p class="wipeout" align="center">
                 <input type="submit" value="Send" />
             </p>
-        </div>
+        </form>
     </div>
 </div>
 </body>
