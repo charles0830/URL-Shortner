@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="analytics" level="application" />
+    <orderEntry type="library" name="axios" level="application" />
   </component>
 </module>

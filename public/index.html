@@ -6,13 +6,25 @@
     <title>URL Shortner</title>
     <link rel="icon" href="url.ico" type="image/icon type">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script>
+        function generateShort(event) {
+            event.preventDefault();
+
+            const url = document.getElementById("url").value
+            const short_url = document.getElementById("short").value
+            const email = document.getElementById("email").value
+            const password = document.getElementById("password").value
+
+            const data = {email,password,short_url,url};
+
+            axios.post('/admin/urls/',data).then(response=>{
+                console.log(response);
+            })
+        }
+    </script>
 </head>
 <body>
-<script>
-    function generateShort(event) {
-
-    }
-</script>
 <div class="shade">
     <div class="blackboard">
         <form onsubmit="generateShort(event)"> 
