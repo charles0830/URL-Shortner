@@ -3,8 +3,14 @@ const bodyParser = require('body-parser')
 const app = express()
 const port = 3000
 
-const staticFolder = express.static("public");
+const admin = require("firebase-admin");
+const serviceAccount = require("");
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount)
+});
 
+
+const staticFolder = express.static("public");
 app.use(staticFolder);
 app.use(bodyParser.json());
 
