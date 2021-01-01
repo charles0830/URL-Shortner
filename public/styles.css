@@ -64,7 +64,7 @@ p:nth-of-type(5) > label {
 }
 
 input{
-    width: 100%;
+    width: 80%;
     vertical-align: middle;
     padding-left: 10px;
     background: none;
@@ -75,7 +75,12 @@ input{
     line-height: .6em;
     outline: none;
 }
-
+input[id="short"]{
+    width: 60%;
+}
+input[id="password"],input[id="email"]{
+    width: 70%;
+}
 
 input[type="submit"] {
     cursor: pointer;
