@@ -3,7 +3,6 @@ body {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/50598/concrete-wall-background.jpg) center center fixed;
     background-size: cover;
 }
-
 .shade {
     overflow: auto;
     position: absolute;
@@ -13,7 +12,6 @@ body {
     right: 0;
     background-image: linear-gradient( 150deg, rgba(0, 0, 0, 0.65), transparent);
 }
-
 .blackboard {
     position: relative;
     width: 700px;
@@ -26,7 +24,6 @@ body {
     background-image: radial-gradient( circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)), linear-gradient( 215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent), radial-gradient( circle at right, #111, rgba(51, 51, 51, 1));
     background-color: #333;
 }
-
 .blackboard:before {
     box-sizing: border-box;
     display: block;
@@ -42,27 +39,22 @@ body {
     text-align: center;
     padding-top: 20px;
 }
-
 form {
     padding: 70px 30px 20px;
 }
-
 p {
     position: relative;
     margin-bottom: 1em;
 }
-
 label {
     vertical-align: middle;
     font-family: 'Permanent Marker', cursive;
     font-size: 1.6em;
     color: rgba(238, 238, 238, 0.7);
 }
-
 p:nth-of-type(5) > label {
     vertical-align: top;
 }
-
 input{
     width: 80%;
     vertical-align: middle;
@@ -81,25 +73,21 @@ input[id="short"]{
 input[id="password"],input[id="email"]{
     width: 70%;
 }
-
 input[type="submit"] {
     cursor: pointer;
     color: rgba(238, 238, 238, 0.7);
     line-height: 1em;
     padding: 0;
 }
-
 input[type="submit"]:focus {
     background: rgba(238, 238, 238, 0.2);
     color: rgba(238, 238, 238, 0.2);
 }
-
 ::-moz-selection {
     background: rgba(238, 238, 238, 0.2);
     color: rgba(238, 238, 238, 0.2);
     text-shadow: none;
 }
-
 ::selection {
     background: rgba(238, 238, 238, 0.4);
     color: rgba(238, 238, 238, 0.3);
