@@ -16,7 +16,7 @@ body {
 
 .blackboard {
     position: relative;
-    width: 640px;
+    width: 700px;
     margin: 7% auto;
     border: tan solid 12px;
     border-top: #bda27e solid 12px;
@@ -44,7 +44,7 @@ body {
 }
 
 .form {
-    padding: 70px 20px 20px;
+    padding: 70px 30px 20px;
 }
 
 p {
@@ -63,8 +63,8 @@ p:nth-of-type(5) > label {
     vertical-align: top;
 }
 
-input,
-textarea {
+input{
+    width: 100%;
     vertical-align: middle;
     padding-left: 10px;
     background: none;
@@ -76,12 +76,6 @@ textarea {
     outline: none;
 }
 
-textarea {
-    height: 120px;
-    font-size: 1.4em;
-    line-height: 1em;
-    resize: none;
-}
 
 input[type="submit"] {
     cursor: pointer;
