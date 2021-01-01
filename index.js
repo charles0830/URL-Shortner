@@ -18,6 +18,7 @@ app.use(bodyParser.json());
 
 app.get('/:short_url', (req,res) => {
     const short_url = req.params.short_url;
+
     const doc = urlsdb.doc(short_url)
 
     doc.get().then(response=>{
