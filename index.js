@@ -17,8 +17,7 @@ app.use(staticFolder);
 app.use(bodyParser.json());
 
 app.get('/:short_url', (req,res) => {
-    console.log(res.params.short_url);
-    const short_url = res.params.short_url;
+    const short_url = req.params.short_url;
     const doc = urlsdb.doc(short_url)
 
     doc.get().then(response=>{
@@ -27,7 +26,7 @@ app.get('/:short_url', (req,res) => {
             res.redirect(301,data.url);
         }
     })
-})
+});
 
 app.post('/admin/urls/', (req, res) => {
     console.log(req.body);
