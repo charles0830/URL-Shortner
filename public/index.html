@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>URL Shortner</title>
+</head>
+<body>
+<div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-1">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title">Registration Info</h2>
+                <form method="POST">
+                    <div class="input-group">
+                        <input class="input--style-1" type="text" placeholder="NAME" name="name">
+                    </div>
+                    <div class="row row-space">
+                        <div class="col-2">
+                            <div class="input-group">
+                                <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE" name="birthday">
+                                <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="input-group">
+                                <div class="rs-select2 js-select-simple select--no-search">
+                                    <select name="gender" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                                        <option disabled="disabled" selected="selected">GENDER</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Other</option>
+                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 81.2px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-gender-8v-container"><span class="select2-selection__rendered" id="select2-gender-8v-container" title="GENDER">GENDER</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="rs-select2 js-select-simple select--no-search">
+                            <select name="class" tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                                <option disabled="disabled" selected="selected">CLASS</option>
+                                <option>Class 1</option>
+                                <option>Class 2</option>
+                                <option>Class 3</option>
+                            </select><span class="select2 select2-container select2-container--default select2-container--focus" dir="ltr" style="width: 68.4px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-class-wv-container"><span class="select2-selection__rendered" id="select2-class-wv-container" title="CLASS">CLASS</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            <div class="select-dropdown"></div>
+                        </div>
+                    </div>
+                    <div class="row row-space">
+                        <div class="col-2">
+                            <div class="input-group">
+                                <input class="input--style-1" type="text" placeholder="REGISTRATION CODE" name="res_code">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-t-20">
+                        <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+
+
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/datepicker/moment.min.js"></script>
+<script src="vendor/datepicker/daterangepicker.js"></script>
+
+<script src="js/global.js"></script>
+<div class="daterangepicker dropdown-menu ltr single opensright">
+    <div class="calendar left single" style="display: block;">
+        <div class="daterangepicker_input">
+            <input class="input-mini form-control" type="text" name="daterangepicker_start" value="" style="display: none;">
+            <i class="fa fa-calendar glyphicon glyphicon-calendar" style="display: none;"></i>
+            <div class="calendar-time" style="display: none;">
+                <div></div>
+                <i class="fa fa-clock-o glyphicon glyphicon-time"></i>
+            </div>
+        </div>
+        <div class="calendar-table"></div>
+    </div>
+    <div class="calendar right" style="display: none;">
+        <div class="daterangepicker_input">
+            <input class="input-mini form-control" type="text" name="daterangepicker_end" value="" style="display: none;">
+            <i class="fa fa-calendar glyphicon glyphicon-calendar" style="display: none;"></i>
+            <div class="calendar-time" style="display: none;">
+                <div></div>
+                <i class="fa fa-clock-o glyphicon glyphicon-time"></i>
+            </div>
+        </div>
+        <div class="calendar-table"></div>
+    </div>
+    <div class="ranges" style="display: none;">
+        <div class="range_inputs"><button class="applyBtn btn btn-sm btn-success" disabled="disabled" type="button">Apply</button>
+            <button class="cancelBtn btn btn-sm btn-default" type="button">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>

@@ -2,9 +2,10 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+const staticFolder = express.static("public");
+
+app.use(staticFolder)
+
 
 app.get('/another', (req, res) => {
     res.send('Hello From Another World!')
