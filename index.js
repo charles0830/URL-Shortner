@@ -33,20 +33,18 @@ app.get('/:short_url', (req,res) => {
 });
 
 app.post('/admin/urls/', (req, res) => {
-    const {email,password,short,url} = req.body;
-
+    const {email,password,short_url,url} = req.body;
     usersdb.doc(email).get().then(response=>{
-        const user = response.body();
+        const user = response.data();
         if (user && user.email === email && user.password===password){
-            const doc = urlsdb.doc(short);
-            doc.set({url}).then(r => {
-                res.send("Done");
-            });
+            const doc = urlsdb.doc(short_url);
+            doc.set({url}).then(_ => {
+                res.send({statusCode:201,message:"Done"});
+            })
         }else {
             res.send({statusCode:403,message:"Not Possible"})
         }
     })
-    res.send('Hello From Another World!')
 })
 
 app.listen(port, () => {
